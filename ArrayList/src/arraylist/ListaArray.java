@@ -1,6 +1,8 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ListaArray {
     public static void main(String[] args) {
@@ -49,5 +51,20 @@ public class ListaArray {
 
         System.out.println("Contiene \"mundo\"? " + listaArray.contains("mundo"));
 
+        //Como hacer sublistas
+
+        ArrayList<String> lista1 = new ArrayList<>(Arrays.asList("a","b","c","d","e","f"));
+
+        ArrayList<String> sublista = new ArrayList<>(lista1.subList(0,2));
+
+        System.out.println();
+        System.out.println("ArrayList completo: ");
+        for (String e: lista1){
+            System.out.println(e);
+        }
+        System.out.println("Subarray: ");
+        for (String e:sublista){
+            System.out.println(e);
+        }
     }
 }
