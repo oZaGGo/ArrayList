@@ -2,6 +2,8 @@ package arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ListaArray {
     public static void main(String[] args) {
@@ -65,5 +67,16 @@ public class ListaArray {
         for (String e:sublista){
             System.out.println(e);
         }
+
+        //Diferencia entre indexOf y binarySearch
+
+        ArrayList<Integer> listaEnteros = new ArrayList<>(Arrays.asList(1,3,4,6,8,3,6,9,7));
+
+        //Buscamos la pos de 3
+
+        System.out.println("indexOf: " + listaEnteros.indexOf(3));
+
+        System.out.println("binarySearch: " + Collections.binarySearch(listaEnteros,3));
+
     }
 }
