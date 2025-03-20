@@ -19,7 +19,7 @@ public class EjercicioSimple {
             int opcion = scanner.nextInt();
 
             if (opcion == 1) {
-                turnos.add(turno);
+                turnos.push(turno);
                 System.out.println("Nuevo cliente agregado con el turno #" + turno);
                 turno++;
             } else if (opcion == 2) {
